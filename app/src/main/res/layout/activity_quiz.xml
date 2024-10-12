@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"></TextView>
+
+
+
+    <TextView
+        android:id="@+id/topbackground"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/topcolor"
+        android:elevation="15dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:text="QUESTIONS LEFT : "
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/round_corner"
+        android:fontFamily="@font/opensans"></TextView>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:fontFamily="@font/opensans"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:text="05:00"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/backarrow"
+        android:elevation="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="QUESTION"
+        android:elevation="15dp"
+        android:padding="30dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textFontWeight="1000"
+        android:fontFamily="@font/opensans"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/topbackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </TextView>
+
+    <Button
+        android:id="@+id/ans_A"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="ANS A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/topbackground" />
+
+    <Button
+        android:id="@+id/ans_B"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="ANS B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/ans_A" />
+
+    <Button
+        android:id="@+id/ans_C"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="ANS C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/ans_B" />
+
+    <Button
+        android:id="@+id/ans_D"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="ANS D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/ans_C" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttonshape"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans_D" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

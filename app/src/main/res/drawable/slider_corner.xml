@@ -1,0 +1,7 @@
+<!-- res/drawable/squircle_edittext.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" /> <!-- Background color -->
+    <stroke android:width="2dp" android:color="@color/white" /> <!-- Border color and width -->
+    <corners android:radius="40dp" /> <!-- Adjust corner radius to create the squircle effect -->
+    <padding android:left="10dp" android:top="10dp" android:right="10dp" android:bottom="10dp" />
+</shape>

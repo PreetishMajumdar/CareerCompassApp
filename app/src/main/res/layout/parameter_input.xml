@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/topbackground"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:elevation="15dp"
+        android:background="@drawable/topcolor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/toptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:layout_marginTop="0dp"
+        android:text="ENTER YOUR DETAILS"
+        android:textColor="@color/white"
+        android:fontFamily="@font/opensans"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/topbackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/toplogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:elevation="15dp"
+        android:src="@drawable/toplogotransparent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/backarrow"
+        android:elevation="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ScrollView starts here -->
+    <ScrollView
+        android:id="@+id/parameterScrollView"
+        android:layout_width="380dp"
+        android:layout_height="400dp"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:overScrollMode="always"
+        android:background="@drawable/round_border_background"
+        android:fillViewport="true"
+        android:elevation="15dp"
+        app:layout_constraintTop_toBottomOf="@id/topbackground"
+        app:layout_constraintBottom_toTopOf="@+id/predictbutton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:id="@+id/parameterLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/cgpainput"
+                android:inputType="numberDecimal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squircle_edittext"
+                android:layout_marginTop="40dp"
+                android:hint="CGPA"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/iqinput"
+                android:layout_width="300dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:hint="IQ Score"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/profilescoreinput"
+                android:layout_width="300dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:hint="12th Score"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/proficientLanguages"
+                android:layout_width="300dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squircle_edittext"
+                android:layout_marginTop="40dp"
+                android:hint="Proficient Languages (Python, Java, SQL)"
+                android:gravity="center"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/extraActivities"
+                android:layout_width="300dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squircle_edittext"
+                android:layout_marginTop="40dp"
+                android:hint="Extracurricular Activities"
+                android:gravity="center"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/internshipExperience"
+                android:layout_width="300dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squircle_edittext"
+                android:layout_marginTop="40dp"
+                android:hint="Internships (With Stipend)"
+                android:gravity="center"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/projects"
+                android:layout_width="300dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squircle_edittext"
+                android:layout_marginTop="40dp"
+                android:hint="Projects"
+                android:gravity="center"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/softSkills"
+                android:layout_width="300dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squircle_edittext"
+                android:layout_marginTop="40dp"
+                android:hint="Soft Skills (Communication, Teamwork)"
+                android:gravity="center"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/certifications"
+                android:layout_width="300dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squircle_edittext"
+                android:layout_marginTop="40dp"
+                android:hint="Certifications (AI, Data Science)"
+                android:gravity="center"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/interviews"
+                android:layout_width="300dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squircle_edittext"
+                android:layout_marginTop="40dp"
+                android:hint="Interviews"
+                android:gravity="center"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/githubRepositories"
+                android:layout_width="300dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squircle_edittext"
+                android:layout_marginTop="40dp"
+                android:hint="Github Repositories"
+                android:gravity="center"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/workshopParticipation"
+                android:layout_width="300dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squircle_edittext"
+                android:layout_marginTop="40dp"
+                android:hint="Workshops/Conferences"
+                android:gravity="center"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/socialWork"
+                android:layout_width="300dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squircle_edittext"
+                android:layout_marginTop="40dp"
+                android:hint="Social Work Count"
+                android:gravity="center"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/aptitudeTestScore"
+                android:layout_width="300dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/squircle_edittext"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:hint="Aptitude Test Score"
+                android:gravity="center"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold" />
+
+
+            <!-- Add more input fields as necessary -->
+
+        </LinearLayout>
+    </ScrollView>
+    <!-- ScrollView ends here -->
+
+    <Button
+        android:id="@+id/predictbutton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/opensans"
+        android:text="Predict"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/parameterScrollView"
+        app:layout_constraintBottom_toTopOf="@+id/taketestbutton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:elevation="15dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/taketestbutton"
+        android:layout_width="180dp"
+        android:background="@drawable/round_border_background"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/opensans"
+        android:text="Take an IQ Test"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:elevation="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <Button
+        android:id="@+id/aptitudetestbutton"
+        android:layout_width="180dp"
+        android:background="@drawable/round_border_background"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/opensans"
+        android:text="Aptitude Test"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:elevation="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

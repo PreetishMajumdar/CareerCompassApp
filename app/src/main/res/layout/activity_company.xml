@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompanyActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"></TextView>
+
+
+    <TextView
+        android:id="@+id/topbackground"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/home_top_color"
+        android:elevation="15dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/bottom_background"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/company_bottom_color"
+        android:elevation="15dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/toplogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:elevation="15dp"
+        android:src="@drawable/toplogotransparent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/backarrow"
+        android:elevation="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shortlist_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/opensans"
+        android:text="Shortlist"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/horizontalscrollview"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:elevation="15dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topbackground"> <!-- Optionally, disable scrollbars -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/cgpainput"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:hint="CGPA"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/iqinput"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:hint="IQ Score"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/profilescoreinput"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:hint="12th Score"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/proficientLanguages"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:hint="Proficient Languages (Python, Java, SQL)"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/extraActivities"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:hint="Extracurricular Activities"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/internshipExperience"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:hint="Internships (With Stipend)"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/projects"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:hint="Projects"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/softSkills"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:hint="Soft Skills (Communication, Teamwork)"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/certifications"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:hint="Certifications (AI, Data Science)"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/interviews"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:hint="Interviews"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/githubRepositories"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:hint="Github Repositories"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/workshopParticipation"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:hint="Workshops/Conferences"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/socialWork"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:hint="Social Work Count"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/aptitudeTestScore"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/squircle_edittext"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:hint="Aptitude Test Score"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/bottom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Top 10 Companies"
+        android:textColor="@color/white"
+        android:fontFamily="@font/opensans"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bottom_background" />
+
+    <LinearLayout
+        android:id="@+id/company_first_column"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bottom_text"
+        android:elevation="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:layout_marginTop="20dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:riv_corner_radius="40dp"
+            android:src="@drawable/wallpaper1"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:riv_corner_radius="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/wallpaper2"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:riv_corner_radius="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/wallpaper2"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:riv_corner_radius="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/wallpaper2"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:riv_corner_radius="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/wallpaper2"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/company_second_column"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bottom_text"
+        android:elevation="15dp"
+        app:layout_constraintStart_toEndOf="@id/company_first_column"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:layout_marginTop="20dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:riv_corner_radius="40dp"
+            android:src="@drawable/wallpaper1"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:riv_corner_radius="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/wallpaper2"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:riv_corner_radius="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/wallpaper2"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:riv_corner_radius="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/wallpaper2"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:riv_corner_radius="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/wallpaper2"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
