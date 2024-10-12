@@ -311,7 +311,7 @@
 
     <LinearLayout
         android:id="@+id/company_first_column"
-        android:layout_width="210dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/bottom_text"
         android:elevation="15dp"
@@ -320,39 +320,51 @@
         android:gravity="start"
         android:layout_marginTop="20dp">
 
+
         <com.makeramen.roundedimageview.RoundedImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
-            android:src="@drawable/wallpaper1"/>
+            android:background="@drawable/round_outline"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_company_logo"/>
+
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/wallpaper2"/>
+            android:background="@drawable/round_outline"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_company_logo"/>
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/wallpaper2"/>
+            android:background="@drawable/round_outline"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_company_logo"/>
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/wallpaper2"/>
+            android:background="@drawable/round_outline"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_company_logo"/>
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/wallpaper2"/>
+            android:background="@drawable/round_outline"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_company_logo"/>
 
 
     </LinearLayout>
@@ -360,11 +372,104 @@
 
 
     <LinearLayout
-        android:id="@+id/company_second_column"
-        android:layout_width="210dp"
+        android:id="@+id/image_first_column"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/bottom_text"
         android:elevation="15dp"
+        app:layout_constraintStart_toEndOf="@id/company_first_column"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="1dp"
+            android:text="Company 1"
+            android:textColor="@color/white"
+            app:riv_corner_radius="40dp"
+            android:textAlignment="gravity"
+            android:fontFamily="@font/opensans"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="1dp"
+            android:text="Company 2"
+            android:textColor="@color/white"
+            app:riv_corner_radius="40dp"
+            android:textAlignment="gravity"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensans"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="1dp"
+            android:text="Company 3"
+            android:textColor="@color/white"
+            app:riv_corner_radius="40dp"
+            android:textAlignment="gravity"
+            android:fontFamily="@font/opensans"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="1dp"
+            android:text="Company 4"
+            android:textColor="@color/white"
+            app:riv_corner_radius="40dp"
+            android:textAlignment="gravity"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensans"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="1dp"
+            android:text="Company 5"
+            android:textColor="@color/white"
+            app:riv_corner_radius="40dp"
+            android:textAlignment="gravity"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensans"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/company_second_column"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bottom_text"
+        android:elevation="15dp"
+        android:layout_marginStart="140dp"
         app:layout_constraintStart_toEndOf="@id/company_first_column"
         android:orientation="vertical"
         android:gravity="start"
@@ -374,38 +479,142 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
-            android:src="@drawable/wallpaper1"/>
+            android:background="@drawable/round_outline"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_company_logo"/>
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/wallpaper2"/>
+            android:background="@drawable/round_outline"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_company_logo"/>
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/wallpaper2"/>
+            android:background="@drawable/round_outline"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_company_logo"/>
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/wallpaper2"/>
+            android:background="@drawable/round_outline"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_company_logo"/>
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/wallpaper2"/>
+            android:background="@drawable/round_outline"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_company_logo"/>
 
 
     </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/image_second_column"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bottom_text"
+        android:elevation="15dp"
+        app:layout_constraintStart_toEndOf="@id/company_second_column"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="1dp"
+            android:text="Company 6"
+            android:textColor="@color/white"
+            app:riv_corner_radius="40dp"
+            android:textAlignment="gravity"
+            android:fontFamily="@font/opensans"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="1dp"
+            android:text="Company 7"
+            android:textColor="@color/white"
+            app:riv_corner_radius="40dp"
+            android:textAlignment="gravity"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensans"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="1dp"
+            android:text="Company 8"
+            android:textColor="@color/white"
+            app:riv_corner_radius="40dp"
+            android:textAlignment="gravity"
+            android:fontFamily="@font/opensans"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="1dp"
+            android:text="Company 9"
+            android:textColor="@color/white"
+            app:riv_corner_radius="40dp"
+            android:textAlignment="gravity"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensans"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="1dp"
+            android:text="Company 10"
+            android:textColor="@color/white"
+            app:riv_corner_radius="40dp"
+            android:textAlignment="gravity"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensans"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+
+
+    </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
