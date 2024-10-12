@@ -301,6 +301,8 @@
         android:elevation="15dp"
         android:layout_marginTop="20dp"
         android:text="Top 10 Companies"
+        android:textAlignment="gravity"
+        android:gravity="center"
         android:textColor="@color/white"
         android:fontFamily="@font/opensans"
         android:textSize="34sp"
@@ -322,6 +324,7 @@
 
 
         <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/companylogo1"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
@@ -331,15 +334,7 @@
 
 
         <com.makeramen.roundedimageview.RoundedImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            app:riv_corner_radius="40dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/round_outline"
-            android:padding="12dp"
-            android:src="@drawable/ic_baseline_company_logo"/>
-
-        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/companylogo2"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
@@ -349,6 +344,7 @@
             android:src="@drawable/ic_baseline_company_logo"/>
 
         <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/companylogo3"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
@@ -358,6 +354,17 @@
             android:src="@drawable/ic_baseline_company_logo"/>
 
         <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/companylogo4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:riv_corner_radius="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_outline"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_company_logo"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/companylogo5"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
@@ -385,6 +392,7 @@
 
 
         <TextView
+            android:id="@+id/companytitle1"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:padding="1dp"
@@ -400,6 +408,7 @@
 
 
         <TextView
+            android:id="@+id/companytitle2"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:padding="1dp"
@@ -415,6 +424,7 @@
 
 
         <TextView
+            android:id="@+id/companytitle3"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:padding="1dp"
@@ -430,6 +440,7 @@
 
 
         <TextView
+            android:id="@+id/companytitle4"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:padding="1dp"
@@ -445,6 +456,7 @@
 
 
         <TextView
+            android:id="@+id/companytitle5"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:padding="1dp"
@@ -476,6 +488,7 @@
         android:layout_marginTop="20dp">
 
         <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/companylogo6"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
@@ -484,15 +497,7 @@
             android:src="@drawable/ic_baseline_company_logo"/>
 
         <com.makeramen.roundedimageview.RoundedImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            app:riv_corner_radius="40dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/round_outline"
-            android:padding="12dp"
-            android:src="@drawable/ic_baseline_company_logo"/>
-
-        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/companylogo7"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
@@ -502,6 +507,7 @@
             android:src="@drawable/ic_baseline_company_logo"/>
 
         <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/companylogo8"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
@@ -511,6 +517,17 @@
             android:src="@drawable/ic_baseline_company_logo"/>
 
         <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/companylogo9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:riv_corner_radius="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_outline"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_company_logo"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/companylogo10"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:riv_corner_radius="40dp"
@@ -537,6 +554,7 @@
 
 
         <TextView
+            android:id="@+id/companytitle6"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:padding="1dp"
@@ -552,6 +570,7 @@
 
 
         <TextView
+            android:id="@+id/companytitle7"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:padding="1dp"
@@ -567,6 +586,7 @@
 
 
         <TextView
+            android:id="@+id/companytitle8"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:padding="1dp"
@@ -582,6 +602,7 @@
 
 
         <TextView
+            android:id="@+id/companytitle9"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:padding="1dp"
@@ -597,6 +618,7 @@
 
 
         <TextView
+            android:id="@+id/companytitle10"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:padding="1dp"
