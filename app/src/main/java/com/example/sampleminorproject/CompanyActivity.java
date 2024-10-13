@@ -3,6 +3,7 @@ package com.example.sampleminorproject;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +15,7 @@ public class CompanyActivity extends AppCompatActivity {
 
     // Define UI elements
     private TextView[] companyTextViews = new TextView[10];
+    private ImageView[] companyImageViews = new ImageView[10]; // To hold ImageViews for logos
     private TextView cgpaInput, iqScoreInput, profileScoreInput, aptitudeTestScoreInput;
     private Button shortlistButton;
 
@@ -46,6 +48,18 @@ public class CompanyActivity extends AppCompatActivity {
         companyTextViews[8] = findViewById(R.id.companytitle9);
         companyTextViews[9] = findViewById(R.id.companytitle10);
 
+        // Initialize ImageViews for company logos
+        companyImageViews[0] = findViewById(R.id.companylogo1);
+        companyImageViews[1] = findViewById(R.id.companylogo2);
+        companyImageViews[2] = findViewById(R.id.companylogo3);
+        companyImageViews[3] = findViewById(R.id.companylogo4);
+        companyImageViews[4] = findViewById(R.id.companylogo5);
+        companyImageViews[5] = findViewById(R.id.companylogo6);
+        companyImageViews[6] = findViewById(R.id.companylogo7);
+        companyImageViews[7] = findViewById(R.id.companylogo8);
+        companyImageViews[8] = findViewById(R.id.companylogo9);
+        companyImageViews[9] = findViewById(R.id.companylogo10);
+
         // Initialize Button
         shortlistButton = findViewById(R.id.shortlist_button);
 
@@ -61,24 +75,25 @@ public class CompanyActivity extends AppCompatActivity {
 
                 // Check if match score is too low (e.g., less than or equal to 0)
                 if (matchScore <= 0) {
-                    // If match score is 0 or negative, clear all TextViews
-                    clearCompanyTextViews();
+                    // If match score is 0 or negative, clear all TextViews and ImageViews
+                    clearCompanyViews();
                     return; // Exit early
                 }
 
                 // Sort and shortlist companies based on match score
                 ArrayList<Company> shortlistedCompanies = shortlistCompanies(matchScore);
 
-                // Display the shortlisted companies in their respective TextViews
+                // Display the shortlisted companies in their respective TextViews and ImageViews
                 displayCompanies(shortlistedCompanies);
             }
         });
     }
 
-    // Function to clear the TextViews
-    private void clearCompanyTextViews() {
-        for (TextView textView : companyTextViews) {
-            textView.setText(""); // Clear the TextViews
+    // Function to clear the TextViews and ImageViews
+    private void clearCompanyViews() {
+        for (int i = 0; i < companyTextViews.length; i++) {
+            companyTextViews[i].setText(""); // Clear the TextViews
+            companyImageViews[i].setImageResource(0); // Clear the ImageViews
         }
     }
 
@@ -141,13 +156,21 @@ public class CompanyActivity extends AppCompatActivity {
         return shortlisted;
     }
 
-    // Function to display shortlisted companies in TextViews
+    // Function to display shortlisted companies in TextViews and ImageViews
     private void displayCompanies(ArrayList<Company> shortlistedCompanies) {
         for (int i = 0; i < companyTextViews.length; i++) {
             if (i < shortlistedCompanies.size()) {
-                companyTextViews[i].setText(shortlistedCompanies.get(i).getName());
+                Company company = shortlistedCompanies.get(i);
+
+                // Set the company name in the TextView
+                companyTextViews[i].setText(company.getName());
+
+                // Set the company logo in the ImageView
+                companyImageViews[i].setImageResource(company.getLogoResourceId());
             } else {
-                companyTextViews[i].setText(""); // Clear remaining TextViews
+                // Clear the TextView and ImageView if no more companies
+                companyTextViews[i].setText("");
+                companyImageViews[i].setImageResource(0);
             }
         }
     }
