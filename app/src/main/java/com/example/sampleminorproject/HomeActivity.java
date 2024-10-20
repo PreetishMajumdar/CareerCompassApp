@@ -45,6 +45,15 @@ public class HomeActivity extends AppCompatActivity {
         logout_logo.startAnimation(topToDown);
         profile_photo.startAnimation(topToDown);
 
+
+        profile_photo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, AboutusActivity.class);
+                startActivity(intent);
+            }
+        });
+
         logout_logo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
