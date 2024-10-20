@@ -78,7 +78,7 @@
         android:layout_marginTop="0dp"
         android:text="QUESTION"
         android:elevation="15dp"
-        android:padding="30dp"
+        android:padding="60dp"
         android:gravity="center"
         android:textColor="@color/white"
         android:textFontWeight="1000"
