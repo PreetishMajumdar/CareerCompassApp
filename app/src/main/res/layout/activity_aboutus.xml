@@ -50,11 +50,12 @@
     <ScrollView
         android:id="@+id/aboutpreetishscroll"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/topbackground"
-        android:layout_marginTop="70dp"
-        android:layout_marginStart="10dp">
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -79,8 +80,20 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="10dp"
+                android:padding="1dp"
+                android:background="@drawable/round_outline"
                 android:src="@drawable/profile_logo_preetish"
-                app:riv_corner_radius="40dp"/>
+                app:riv_corner_radius="50dp"/>
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                android:text="Hey, I am Preetish. I am a fourth year student in SRM Institute of Science and Technology, pursuing my degree in Computer Science. An amateur coder and a musician, I love spending my weekends creating apps to improve my coding skills. The rest of the day, you can catch me sitting in front of my instruments. I sit before my computer for hours, fidgeting around different UI/UX designs for apps and try to work them out into different apps that I make. Some of the skills include coding in Python, Kotlin, Java, C, C++, AutoCad, and editing in Photoshop and Premiere Pro. I am a good student and so far had been one of the top students in my school, having been in the top 1% scorers in my 12th board exams and being recognized with a scholarship for Higher Education."
+                android:textColor="@color/white"
+                android:fontFamily="@font/opensans"
+                android:gravity="center_horizontal"/>
 
         </LinearLayout>
 
@@ -92,11 +105,12 @@
     <ScrollView
         android:id="@+id/abouthemanthscroll"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/topbackground"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="10dp">
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -121,8 +135,20 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="10dp"
+                android:padding="1dp"
+                android:background="@drawable/round_outline"
                 android:src="@drawable/careercompassapplogo"
-                app:riv_corner_radius="40dp"/>
+                app:riv_corner_radius="50dp"/>
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                android:text="Hey, I am Preetish. I am a fourth year student in SRM Institute of Science and Technology, pursuing my degree in Computer Science. An amateur coder and a musician, I love spending my weekends creating apps to improve my coding skills. The rest of the day, you can catch me sitting in front of my instruments. I sit before my computer for hours, fidgeting around different UI/UX designs for apps and try to work them out into different apps that I make. Some of the skills include coding in Python, Kotlin, Java, C, C++, AutoCad, and editing in Photoshop and Premiere Pro. I am a good student and so far had been one of the top students in my school, having been in the top 1% scorers in my 12th board exams and being recognized with a scholarship for Higher Education."
+                android:textColor="@color/white"
+                android:fontFamily="@font/opensans"
+                android:gravity="center_horizontal"/>
 
         </LinearLayout>
 
