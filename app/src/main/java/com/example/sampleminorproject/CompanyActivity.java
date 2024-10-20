@@ -1,10 +1,13 @@
 package com.example.sampleminorproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
@@ -18,6 +21,7 @@ public class CompanyActivity extends AppCompatActivity {
     private ImageView[] companyImageViews = new ImageView[10]; // To hold ImageViews for logos
     private TextView cgpaInput, iqScoreInput, profileScoreInput, aptitudeTestScoreInput;
     private Button shortlistButton;
+    private ImageView backButton; // Back button ImageView
 
     // Define threshold for matching
     private static final double THRESHOLD = 30.0;
@@ -63,10 +67,13 @@ public class CompanyActivity extends AppCompatActivity {
         // Initialize Button
         shortlistButton = findViewById(R.id.shortlist_button);
 
+        // Initialize the back button
+        backButton = findViewById(R.id.backarrow);
+
         // Fetch the list of companies from CompanyData
         companies = CompanyData.getCompanyList();
 
-        // Set up an OnClickListener for the button
+        // Set up an OnClickListener for the shortlist button
         shortlistButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,6 +92,17 @@ public class CompanyActivity extends AppCompatActivity {
 
                 // Display the shortlisted companies in their respective TextViews and ImageViews
                 displayCompanies(shortlistedCompanies);
+            }
+        });
+
+        // Set an OnClickListener for the back button
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an intent to navigate to HomeActivity
+                Intent intent = new Intent(CompanyActivity.this, HomeActivity.class);
+                startActivity(intent);
+                finish(); // Optional: call finish if you don't want to return to this activity
             }
         });
     }
@@ -174,4 +192,12 @@ public class CompanyActivity extends AppCompatActivity {
             }
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(CompanyActivity.this, HomeActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
 }
