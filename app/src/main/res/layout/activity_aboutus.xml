@@ -138,8 +138,9 @@
                 android:layout_height="100dp"
                 android:layout_marginTop="10dp"
                 android:padding="1dp"
+                android:scaleType="centerCrop"
                 android:background="@drawable/round_outline"
-                android:src="@drawable/careercompassapplogo"
+                android:src="@drawable/profile_logo_hemanth"
                 app:riv_corner_radius="50dp"/>
 
             <TextView
@@ -147,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:justificationMode="inter_word"
-                android:text="Hey, I am Preetish. I am a fourth year student in SRM Institute of Science and Technology, pursuing my degree in Computer Science. An amateur coder and a musician, I love spending my weekends creating apps to improve my coding skills. The rest of the day, you can catch me sitting in front of my instruments. I sit before my computer for hours, fidgeting around different UI/UX designs for apps and try to work them out into different apps that I make. Some of the skills include coding in Python, Kotlin, Java, C, C++, AutoCad, and editing in Photoshop and Premiere Pro. I am a good student and so far had been one of the top students in my school, having been in the top 1% scorers in my 12th board exams and being recognized with a scholarship for Higher Education."
+                android:text="Hey, I am Hemanth. I am a fourth year student in SRM Institute of Science and Technology, pursuing my degree in Computer Science. An amateur coder and a musician, I love spending my weekends creating apps to improve my coding skills. The rest of the day, you can catch me sitting in front of my instruments. I sit before my computer for hours, fidgeting around different UI/UX designs for apps and try to work them out into different apps that I make. Some of the skills include coding in Python, Kotlin, Java, C, C++, AutoCad, and editing in Photoshop and Premiere Pro. I am a good student and so far had been one of the top students in my school, having been in the top 1% scorers in my 12th board exams and being recognized with a scholarship for Higher Education."
                 android:textColor="@color/white"
                 android:fontFamily="@font/opensans"
                 android:gravity="center_horizontal"/>
