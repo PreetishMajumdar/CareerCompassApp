@@ -67,7 +67,8 @@ public class HomeActivity extends AppCompatActivity {
             imageList.add(R.drawable.wallpaper1);
             imageList.add(R.drawable.wallpaper2);
             imageList.add(R.drawable.wallpaper3);
-            imageList.add(R.drawable.wallpaper4); // Add wallpaper4 here
+            imageList.add(R.drawable.wallpaper4);
+            imageList.add(R.drawable.wallpaper5);// Add wallpaper4 here
 
             viewPagerAdapter = new ViewPagerAdapter(this, imageList);
             viewPager.setAdapter(viewPagerAdapter);

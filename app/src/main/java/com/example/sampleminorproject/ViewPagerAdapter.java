@@ -57,6 +57,9 @@ public class ViewPagerAdapter extends PagerAdapter {
                     case 3:
                         intent = new Intent(context, CompanyActivity.class);
                         break;
+                    case 4:
+                        intent = new Intent(context, AiAssistantActivity.class);
+                        break;
                     default:
                         return; // Do nothing for any other case
                 }
