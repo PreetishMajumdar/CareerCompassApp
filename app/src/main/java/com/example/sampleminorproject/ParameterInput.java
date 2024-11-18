@@ -251,7 +251,8 @@ public class ParameterInput extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // Minimize app when back is pressed or show a logout toast
-        Toast.makeText(ParameterInput.this, "Logout?", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(ParameterInput.this, HomeActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
